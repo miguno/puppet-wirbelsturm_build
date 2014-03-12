@@ -1,0 +1,5 @@
+%_topdir %(echo $HOME)/rpmbuild
+%_signature gpg
+%_gpg_name <%= scope.lookupvar('build::gpg_name') %>
+%_gpg_path <%= scope.lookupvar('build::gpg_path') %>
+%_gpgbin <%= scope.lookupvar('build::gpg_bin') %>
