@@ -65,8 +65,22 @@ class wirbelsturm_build::install inherits wirbelsturm_build {
     alias  => 'java-jdk-devel',
   }
 
-  $build_packages = [ 'unzip', 'gcc', 'gcc-c++', 'libuuid-devel', 'libtool', 'git', 'rpm-build', 'createrepo', 's3cmd',
-                      'ruby', 'ruby-devel', 'gnupg2', 'tcl', 'tree' ]
+  $build_packages = [
+    'unzip',
+    'gcc',
+    'gcc-c++',
+    'libuuid-devel',
+    'libtool',
+    'git',
+    'rpm-build',
+    'createrepo',
+    's3cmd',
+    'ruby',
+    'ruby-devel',
+    'gnupg2',
+    'tcl',
+    'tree',
+  ]
 
   package { $build_packages:
     ensure => 'installed',
