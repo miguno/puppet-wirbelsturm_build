@@ -79,10 +79,17 @@ class wirbelsturm_build::install inherits wirbelsturm_build {
     'ruby-devel',
     'gnupg2',
     'tcl',
-    'tree',
   ]
 
   package { $build_packages:
+    ensure => 'installed',
+  }
+
+  $utils_packages = [
+    'tree',
+  ]
+
+  package { $utils_packages:
     ensure => 'installed',
   }
 
