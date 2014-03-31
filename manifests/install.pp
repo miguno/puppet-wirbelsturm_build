@@ -79,6 +79,10 @@ class wirbelsturm_build::install inherits wirbelsturm_build {
     'ruby-devel',
     'gnupg2',
     'tcl',
+    'cmake',
+    'snappy-devel',
+    'xz-devel',
+    'zlib-devel',
   ]
 
   package { $build_packages:
